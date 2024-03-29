@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+</head>
+<body>
+    <h1>Конвертер валют</h1>
+    <form action="/convert" method="post">
+        <label for="amount">Сумма:</label>
+        <input type="text" id="amount" name="amount"><br><br>
+
+        <label for="currency_from">Из валюты:</label>
+        <select id="currency_from" name="currency_from">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <!-- Добавьте другие валюты по желанию -->
+        </select><br><br>
+
+        <label for="currency_to">В валюту:</label>
+        <select id="currency_to" name="currency_to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <!-- Добавьте другие валюты по желанию -->
+        </select><br><br>
+
+        <button type="submit">Конвертировать</button>
+    </form>
+</body>
+</html>
